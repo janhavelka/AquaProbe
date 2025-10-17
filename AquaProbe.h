@@ -43,6 +43,7 @@ public:
 
   // Change slave ID later if needed
   void setSlave(uint8_t slave);
+  uint8_t  slave() const { return _slave; }   // <-- ADD THIS LINE
 
   // --- High-level reads (scaled) ---
   bool readPH(float& ph);                 // 0.00 … 14.00
